@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    /* padding:100px; */
+    width: 100%;
+    height: calc(100vh - 50px);
+    /* justify-content: space-around; */
+    position: relative;
+    overflow: hidden;
+    
+}
+.card{
+    flex:1;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    
+}
+.h1{
+    font-size: 40px;
+}
+.brand{
+    color: green;
+}
+.button{
+    color:white;
+    cursor: pointer;
+    background-color: green;
+    height: 55px;
+    width: 100px;
+    border: 0;
+    border-radius: 13px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        flex-direction: column;
+    }
+    .h1{
+        font-size: 35px;
+    }
+    .para{
+        display: none;
+    }
+    .card{
+        padding: 50px;
+    }
+    
+}

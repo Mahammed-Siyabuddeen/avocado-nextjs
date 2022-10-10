@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 4px solid #000;
+    padding: 30px 50px;
+    justify-content: space-between;
+}
+.brandName{
+    background-color: green;
+    width: max-content;
+    color: white;
+    padding: 10px;
+}
+.brandLink{
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0,128,0,0.774);
+    width: max-content;
+    padding: 5px;
+    
+}
+.brandSpan{
+    font-weight: bold;
+    font-size: 24px;
+}
+.para{
+    padding: 20px;
+    max-width: 250px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+
+    .brandName{
+        width: 100%;
+        font-size: 24px ;
+    }
+    .brandSpan{
+        font-size: 20px;
+    }
+    .para{
+      font-size: 14px;  
+      padding: 10px;
+    }
+}

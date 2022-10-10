@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    padding: 120px 50px;
+
+}
+.card{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.details{
+    flex: 1;
+}
+.imageContainer{
+  width: 30%;
+  margin: 5px;
+  position: relative;
+
+}
+.h1{
+    font-size: 60px;
+    word-break: break-all;
+}
+
+.button{
+    padding: 15px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 50px 50px;
+    }
+    .imageContainer{
+        width: 300px;
+        height: 300px;
+    }
+    .card::before{
+        content: "Projects";
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .button{
+        margin: 20px 0;
+    }
+}
