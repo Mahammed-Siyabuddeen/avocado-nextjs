@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import menu_img from  '../public/menu.png'
-import {Menu} from '@mui/icons-material'
 import Intro from '../components/Intro'
 import {services,users} from '../Data'
 import Services from '../components/Services'
@@ -12,7 +10,7 @@ export default function Home({services,users}) {
     <div className={styles.container}>
       <Head>
         <title>shihab</title>
-        <meta name="description" content="mahammed siyabuddeen mangalore fullstack developer this is the project website using nextjs" />
+        <meta name="description" content="mahammed siyabuddeen mangalore fullstack developer this is the project website " />
       </Head>
       <Intro/>
       <Services services={services}/>

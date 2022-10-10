@@ -8,8 +8,8 @@ function ProductName({data}) {
     <div className={style.container} >
       <div className={style.card}>
           {
-            data.images.map((image)=>(
-              <div className={style.imageContainer}>
+            data.images.map((image,i)=>(
+              <div key={i} className={style.imageContainer}>
                 <Image
                 src={image.url}
                 objectFit="cover"
